@@ -1,0 +1,17 @@
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="NegativeTests" verbose="1" >
+  
+ 
+  <test name="negativeTests">
+  <groups>
+  	<run>
+  		<include name = "smokeTests"/>
+  	</run>
+  </groups>
+    <classes>
+      <class name="com.herokuapp.theinternet.negativeTests"/>
+      
+    </classes>
+  </test>
+</suite>

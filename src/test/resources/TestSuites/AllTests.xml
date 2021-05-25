@@ -1,0 +1,19 @@
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="AllTests" verbose="1" >
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+  <test name="PositiveTests" >
+    <classes>
+       <class name="com.herokuapp.theinternet.PositiveTests" />
+    </classes>
+  </test>
+ 
+  <test name="negativeTests">
+    <classes>
+      <class name="com.herokuapp.theinternet.negativeTests"/>
+    </classes>
+  </test>
+</suite>
